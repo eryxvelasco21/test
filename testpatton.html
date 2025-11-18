@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Brand</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', sans-serif; background: #000; color: #fff; scroll-behavior: smooth; }
+
+        /* Landing / Hero */
+        #home {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1586120346619-c3d2ff84e348') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+        }
+
+        #home h1 { font-size: 4rem; }
+        #home p { font-size: 1.3rem; margin-top: 10px; }
+
+        .btn {
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: #fff;
+            color: #000;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Full-screen JotForm */
+        #form {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #form iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 85vh;
+            border: none;
+            border-radius: 10px;
+            background: #111;
+            box-shadow: 0px 8px 25px rgba(255,255,255,0.1);
+        }
+
+        /* Grouped About + Contact Section */
+        #info {
+            padding: 80px 20px;
+            text-align: center;
+            background: #000;
+        }
+
+        .info-box {
+            max-width: 700px;
+            margin: auto;
+            background: #111;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.05);
+        }
+
+        h2 { margin-bottom: 15px; font-size: 2rem; }
+        p { margin: 10px 0; line-height: 1.7; color: #ccc; }
+
+        footer {
+            padding: 30px;
+            background: #000;
+            color: #555;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+        <h1>PATTON CUSTOM CLOTHING</h1>
+        <p>Style. Comfort. Confidence.</p>
+        <a href="#form" class="btn">Start Now</a>
+    </section>
+
+    <!-- FULL SCREEN JOTFORM -->
+    <section id="form">
+        <h2>Fill Out the Form</h2>
+
+        <!-- 🔽 Replace JotForm Link Here -->
+        <iframe
+            src="https://form.jotform.com/your-form-id"
+            allow="geolocation; microphone; camera">
+        </iframe>
+        <!-- 🔼 Replace with your actual JotForm embed -->
+    </section>
+
+    <!-- GROUPED ABOUT + CONTACT SECTION -->
+    <section id="info">
+        <div class="info-box">
+            <h2>About Us</h2>
+            <p>
+                Your Brand is a modern clothing line focused on minimalism, high-quality materials,
+                and bold elegance. Each piece is crafted to elevate your style with clean lines
+                and timeless design.
+            </p>
+
+            <h2 style="margin-top:40px;">Contact</h2>
+            <p>Email: hello@yourbrand.com</p>
+            <p>Instagram: @yourbrand</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 PATTON CUSTOM CLOTHING — All Rights Reserved.
+    </footer>
+
+</body>
+</html>
